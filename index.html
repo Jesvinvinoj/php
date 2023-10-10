@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Form Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>JESVIN'S PIZZA</h1>
-    <!-- Add navigation links here if needed -->
-  </header>
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>Insert your content here.</p>
-    </section>
-    <!-- Add more sections and content as needed -->
-    <section>
-      <button onclick="location.href='order.html'">Order Now</button>
-    </section>
-  </main>
-  <footer>
-    <p>Contact us at: contact@example.com</p>
-  </footer>
+    <div class="container">
+        <h1>Sample Form</h1>
+        <form action="form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <div id="output">
+        <!-- Display the submitted data here -->
+    </div>
 </body>
 </html>
